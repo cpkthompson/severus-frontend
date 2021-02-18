@@ -75,13 +75,14 @@
 
       <div class="field w3-margin-top">
         <label class="label menu-label">Image</label>
-        <div class="control w3-margin-bottom" *ngFor="let image of signatureImages">
-          <input type="radio" name="signatureImage" (change)="signatureImage=image">
-          &nbsp;
-          <img [src]="image" alt="">
+        <div class="columns is-multiline">
+          <div class="control column is-4" *ngFor="let image of signatureImages">
+            <a (click)="signatureImage=image">
+              <img [src]="image" alt="" [ngClass]="{'w3-topbar w3-bottombar w3-leftbar w3-rightbar w3-border-red w3-animate-opacity': image === signatureImage}">
+            </a>
+          </div>
         </div>
       </div>
-
       <br>
       <div class="field">
         <div class="control">
