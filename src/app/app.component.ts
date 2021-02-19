@@ -15,15 +15,15 @@ export class AppComponent {
     'MEST Incubator (Kenya)',
   ];
   signatureImages = [
-    'assets/images/signatures/Cap2.1.png',
-    'assets/images/signatures/Cap2.2.png',
-    'assets/images/signatures/Cap2.3.png',
-    'assets/images/signatures/Cap2.4.png',
-    'assets/images/signatures/Cap2.5.png',
-    'assets/images/signatures/Cap2.6.png',
-    'assets/images/signatures/Email%20Signatures.png',
-    'assets/images/signatures/Email%20Signatures%20(1).png',
-    'assets/images/signatures/Email%20Signatures%20(2).png',
+    'assets/images/signatures/1.png',
+    'assets/images/signatures/2.png',
+    'assets/images/signatures/3.png',
+    'assets/images/signatures/4.png',
+    'assets/images/signatures/5.png',
+    'assets/images/signatures/6.png',
+    'assets/images/signatures/7.png',
+    'assets/images/signatures/8.png',
+    'assets/images/signatures/9.png',
   ];
 
   profileForm = new FormGroup({
@@ -39,5 +39,5 @@ export class AppComponent {
     phoneNumber2: new FormControl(''),
   });
   secondForm = false;
-  signatureImage = this.signatureImages[1];
+  signatureImage = this.signatureImages[0];
 }
